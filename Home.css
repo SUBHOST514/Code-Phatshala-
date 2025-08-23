@@ -1,0 +1,107 @@
+body {
+    background: #ffffff;
+    
+}
+header {
+  background: #4f564f;
+  width: 100%;       /* সবসময় স্ক্রিনের ফুল প্রস্থ */
+  height: 67px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border: solid 5px #4f564f;
+    border-radius: 50%;
+    position: fixed;
+    left: 5px;
+    top: 3px;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; background:#f5f5f5; }
+
+/* Menu Button */
+.menu-btn {
+  position:fixed;
+  top:15px;
+  right:20px;          /* ডান পাশে */
+  width:30px;
+  height:22px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  cursor:pointer;
+  z-index:1100;
+}
+.menu-btn span {
+  height:3px;
+  width:100%;
+  background:#333;
+  border-radius:2px;
+  transition:0.3s;
+}
+
+/* Side Menu (ডান পাশ থেকে আসবে) */
+nav {
+  position:fixed;
+  top:0;
+  right:-250px; /* শুরুতে লুকানো */
+  width:250px;
+  height:100%;
+  background: #00ffff;
+  padding-top:60px;
+  transition:right 0.3s ease;
+  z-index:1000;
+}
+nav ul { list-style:none; }
+nav ul li { border-bottom:1px solid #444; }
+nav ul li a {
+  display:block;
+  padding:15px 20px;
+  color: #000000;
+  text-decoration:none;
+}
+nav ul li a:hover { background:#333; }
+
+nav.active { right:0; } /* এক্টিভ হলে স্লাইড হয়ে আসবে */
+
+
+
+.container {
+      text-align: center; /* টেক্সট ও ইমেজ মাঝখানে */
+    }
+
+    .container img {
+      max-width: 150px;
+      height: auto;
+      margin: 80px 20px 15px;
+    }
+
+    .container h1 {
+      color: red;
+      font-size: 28px;
+      margin-top: 12px;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .container h1 {
+        font-size: 36px;
+      }
+      .container img {
+        max-width: 200px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .container h1 {
+        font-size: 44px;
+      }
+      .container img {
+        max-width: 240px;
+      }
+    }
+
