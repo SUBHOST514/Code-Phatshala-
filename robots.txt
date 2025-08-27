@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://code-phatshala-bangladesh.netlify.app/Sitemap.xml
+Sitemap: https://code-phatshala-bangladesh.netlify.app/sitemap.xml
