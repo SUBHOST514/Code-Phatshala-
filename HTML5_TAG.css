@@ -1,0 +1,160 @@
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;700&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #005A9C;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* Search Box Styles */
+.search-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search-container .fa-search {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px 20px 12px 40px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+#searchInput:focus {
+    box-shadow: 0 0 10px rgba(0, 90, 156, 0.2);
+    border-color: #005A9C;
+}
+
+/* Category Styles */
+.tag-category {
+    margin-bottom: 40px;
+}
+
+.tag-category h2 {
+    font-size: 1.8rem;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #005A9C;
+    margin-bottom: 20px;
+}
+
+.tag-category h2 i {
+    margin-right: 10px;
+    color: #005A9C;
+}
+
+/* Grid Layout for Tag Boxes */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+/* Tag Box Styles */
+.tag-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tag-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tag-box h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
+    color: #d90429;
+    margin-bottom: 10px;
+}
+
+.tag-box .description {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.tag-box strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #005A9C;
+}
+
+.tag-box pre {
+    background-color: #eef2f5;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-size: 0.9rem;
+}
+
+.tag-box code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
+
+/* Hidden class for search functionality */
+.hidden {
+    display: none;
+}
+.back-btn {
+  background: #3166de;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-left: 200px;
+}
+
+.back-btn:hover {
+  background: #274b9f;
+  transform: scale(1.05);
+}

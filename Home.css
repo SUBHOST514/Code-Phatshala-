@@ -1,0 +1,277 @@
+/* === Reset === */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* === Header === */
+header {
+  background: linear-gradient(90deg,#4f564f,#3166de);
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.site-title {
+  color: white;
+  margin-left: 12px;
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+/* === Menu Button === */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1100;
+}
+.menu-btn span {
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.menu-btn.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px,5px);
+}
+.menu-btn.open span:nth-child(2) { opacity: 0; }
+.menu-btn.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px,-5px);
+}
+
+/* === Side Menu === */
+nav {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(180deg,#00ffff,#3166de);
+  padding-top: 80px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+nav.active { right: 0; }
+nav ul { list-style: none; }
+nav ul li { border-bottom: 1px solid rgba(255,255,255,0.3); }
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  background: rgba(0,0,0,0.3);
+  padding-left: 30px;
+}
+
+/* === Hero Section === */
+.hero {
+  padding-top: 120px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg,#ff4d4f,#3166de);
+  padding-bottom: 80px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero h2 {
+  font-size: clamp(28px,6vw,48px);
+}
+.hero p {
+  margin: 15px auto;
+  max-width: 600px;
+}
+.hero .btn {
+  display: inline-block;
+  background: #ff4d4f;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+.hero .btn:hover {
+  background: #d9363e;
+  transform: scale(1.05);
+}
+
+/* === Features Section === */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.feature {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.feature i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #3166de;
+}
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* === Footer === */
+footer {
+  background: #2c3e50;
+  color: #ecf0f1;
+  margin-top: 50px;
+  padding: 40px 20px 10px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.footer-about h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer-links h4,
+.footer-social h4 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+.footer-links ul li a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer-links ul li a:hover {
+  color: #1abc9c;
+  padding-left: 5px;
+}
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ecf0f1;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #1abc9c;
+  transform: scale(1.2);
+}
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #bdc3c7;
+}
+
+/* === Card Links === */
+.HTML {
+  color: black;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* === Responsive Media Queries === */
+
+/* ছোট মোবাইল */
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 18px;
+  }
+  .menu-btn {
+    top: 18px;
+    right: 15px;
+    width: 25px;
+    height: 20px;
+  }
+  .hero {
+    padding: 100px 10px 50px;
+  }
+  .hero h2 {
+    font-size: 24px;
+  }
+  .hero p {
+    font-size: 14px;
+  }
+  .features {
+    grid-template-columns: 1fr;
+    padding: 30px 10px;
+  }
+}
+
+/* ট্যাবলেট */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+  .features {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/* ল্যাপটপ/ডেস্কটপ */
+@media (min-width: 769px) {
+  .hero h2 {
+    font-size: 42px;
+  }
+  .features {
+    grid-template-columns: repeat(3,1fr);
+  }
+}

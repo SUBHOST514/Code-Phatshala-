@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Phatshala: HTML5.Tags</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="HTML5_TAG.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <button class="back-btn" onclick="history.back()">
+  <i class="fa-solid fa-arrow-left"></i> Back
+</button>
+            <h1>Code Phatshala: HTML5 "important" ক্যাটাগরি ট্যাগ</h1>
+            <p>প্রয়োজনীয় সকল HTML5 ট্যাগের বাংলা বর্ণনা এবং উদাহরণ।</p>
+            <h1>৮৯+ HTML5-এর ট্যাগ</h1>
+        </header>
+
+        <!-- Search Box -->
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="যেকোনো ট্যাগ খুঁজুন (যেমন: p, div, table)...">
+        </div>
+
+        <main id="tagContainer">
+            <!-- ক্যাটাগরি: মৌলিক কাঠামো -->
+            <section class="tag-category">
+                <h2><i class="fas fa-puzzle-piece"></i> মৌলিক কাঠামো (Basic Structure)</h2>
+                <div class="category-grid">
+                    <div class="tag-box" data-name="html">
+                        <h3>&lt;html&gt;</h3>
+                        <p class="description">একটি HTML ডকুমেন্টের মূল বা রুট এলিমেন্ট। সকল এলিমেন্ট এর ভেতরে থাকে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;html lang="bn"&gt;...&lt;/html&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="head">
+                        <h3>&lt;head&gt;</h3>
+                        <p class="description">ডকুমেন্টের মেটা-ডেটা, যেমন টাইটেল, স্টাইলশীট এবং স্ক্রিপ্টের লিংক ধারণ করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;head&gt;...&lt;/head&gt;</code></pre>
+                    </div>
+                     <div class="tag-box" data-name="body">
+                        <h3>&lt;body&gt;</h3>
+                        <p class="description">ওয়েবপেজের সকল দৃশ্যমান কন্টেন্ট (টেক্সট, ছবি, লিঙ্ক) এই ট্যাগের মধ্যে থাকে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;body&gt;...&lt;/body&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="title">
+                        <h3>&lt;title&gt;</h3>
+                        <p class="description">ব্রাউজারের ট্যাবে ডকুমেন্টের শিরোনাম প্রদর্শন করে।</p>
+                         <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;title&gt;আমার পেজ&lt;/title&gt;</code></pre>
+                    </div>
+                     <div class="tag-box" data-name="meta">
+                        <h3>&lt;meta&gt;</h3>
+                        <p class="description">ক্যারেক্টার সেট, ভিউপোর্ট বা পেজের বর্ণনা সম্পর্কিত মেটা-ডেটা নির্ধারণ করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ক্যাটাগরি: সেকশনিং এবং সিমান্টিক -->
+            <section class="tag-category">
+                <h2><i class="fas fa-layer-group"></i> সেকশনিং ও সিমান্টিক (Sectioning & Semantic)</h2>
+                <div class="category-grid">
+                     <div class="tag-box" data-name="div">
+                        <h3>&lt;div&gt;</h3>
+                        <p class="description">কন্টেন্টকে ভাগ করার জন্য একটি জেনেরিক কন্টেইনার। এর কোনো নির্দিষ্ট অর্থ নেই।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;div class="container"&gt;...&lt;/div&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="span">
+                        <h3>&lt;span&gt;</h3>
+                        <p class="description">টেক্সটের একটি ছোট অংশকে স্টাইল বা স্ক্রিপ্টিংয়ের জন্য গ্রুপ করতে ব্যবহৃত হয়।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;p&gt;এটি একটি &lt;span style="color:red;"&gt;রঙিন&lt;/span&gt; শব্দ।&lt;/p&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="header">
+                        <h3>&lt;header&gt;</h3>
+                        <p class="description">পেজ বা সেকশনের শিরোনাম, লোগো, নেভিগেশন ইত্যাদি ধারণ করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;header&gt;...&lt;/header&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="footer">
+                        <h3>&lt;footer&gt;</h3>
+                        <p class="description">পেজ বা সেকশনের কপিরাইট, যোগাযোগের তথ্য ইত্যাদি ফুটার কন্টেন্ট ধারণ করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;footer&gt;...&lt;/footer&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="nav">
+                        <h3>&lt;nav&gt;</h3>
+                        <p class="description">ওয়েবসাইটের নেভিগেশন লিঙ্কগুলো (মেন্যু) রাখার জন্য ব্যবহৃত হয়।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;nav&gt;&lt;a href="/"&gt;হোম&lt;/a&gt;&lt;/nav&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="main">
+                        <h3>&lt;main&gt;</h3>
+                        <p class="description">পেজের প্রধান এবং স্বতন্ত্র কন্টেন্টকে সংজ্ঞায়িত করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;main&gt;...&lt;/main&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="section">
+                        <h3>&lt;section&gt;</h3>
+                        <p class="description">ডকুমেন্টের একটি স্বতন্ত্র বিভাগকে সংজ্ঞায়িত করে, যার সাধারণত একটি শিরোনাম থাকে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;section&gt;...&lt;/section&gt;</code></pre>
+                    </div>
+                     <div class="tag-box" data-name="article">
+                        <h3>&lt;article&gt;</h3>
+                        <p class="description">একটি স্বয়ংসম্পূর্ণ কন্টেন্ট, যেমন ব্লগ পোস্ট বা ফোরাম পোস্টকে সংজ্ঞায়িত করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;article&gt;...&lt;/article&gt;</code></pre>
+                    </div>
+                     <div class="tag-box" data-name="aside">
+                        <h3>&lt;aside&gt;</h3>
+                        <p class="description">মূল কন্টেন্টের সাথে সম্পর্কিত কিন্তু আলাদা কন্টেন্ট (যেমন সাইডবার) সংজ্ঞায়িত করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;aside&gt;...&lt;/aside&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ক্যাটাগরি: টেক্সট ফরম্যাটিং -->
+            <section class="tag-category">
+                <h2><i class="fas fa-font"></i> টেক্সট ফরম্যাটিং (Text Formatting)</h2>
+                <div class="category-grid">
+                     <div class="tag-box" data-name="h1 h2 h3 h4 h5 h6 heading">
+                        <h3>&lt;h1&gt; - &lt;h6&gt;</h3>
+                        <p class="description">শিরোনাম বা হেডিং। &lt;h1&gt; সবচেয়ে গুরুত্বপূর্ণ এবং &lt;h6&gt; সবচেয়ে কম।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;h1&gt;প্রধান শিরোনাম&lt;/h1&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="p paragraph">
+                        <h3>&lt;p&gt;</h3>
+                        <p class="description">একটি প্যারাগ্রাফ বা অনুচ্ছেদ তৈরি করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;p&gt;এটি একটি প্যারাগ্রাফ।&lt;/p&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="a anchor link">
+                        <h3>&lt;a&gt;</h3>
+                        <p class="description">হাইপারলিঙ্ক তৈরি করতে ব্যবহৃত হয়, যা অন্য পেজে লিঙ্ক করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;a href="#"&gt;লিঙ্ক&lt;/a&gt;</code></pre>
+                    </div>
+                     <div class="tag-box" data-name="strong bold">
+                        <h3>&lt;strong&gt;</h3>
+                        <p class="description">টেক্সটকে গুরুত্বপূর্ণ হিসেবে বোঝাতে এবং বোল্ড করতে ব্যবহৃত হয়।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;strong&gt;গুরুত্বপূর্ণ&lt;/strong&gt;</code></pre>
+                    </div>
+                     <div class="tag-box" data-name="em emphasis italic">
+                        <h3>&lt;em&gt;</h3>
+                        <p class="description">টেক্সটকে গুরুত্বারোপ করতে এবং ইটালিক বা বাঁকা অক্ষরে প্রদর্শন করতে ব্যবহৃত হয়।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;em&gt;গুরুত্বারোপিত&lt;/em&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="br break">
+                        <h3>&lt;br&gt;</h3>
+                        <p class="description">একটি লাইন ব্রেক বা নতুন লাইন তৈরি করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>প্রথম লাইন।&lt;br&gt;দ্বিতীয় লাইন।</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="hr horizontal rule">
+                        <h3>&lt;hr&gt;</h3>
+                        <p class="description">একটি আনুভূমিক রেখা তৈরি করে, যা কন্টেন্টকে ভাগ করতে ব্যবহৃত হয়।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;p&gt;প্রথম অংশ&lt;/p&gt;&lt;hr&gt;&lt;p&gt;দ্বিতীয় অংশ&lt;/p&gt;</code></pre>
+                    </div>
+                     <div class="tag-box" data-name="code">
+                        <h3>&lt;code&gt;</h3>
+                        <p class="description">কম্পিউটার কোডের একটি অংশ প্রদর্শন করতে ব্যবহৃত হয়।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;code&gt;console.log()&lt;/code&gt;</code></pre>
+                    </div>
+                     <div class="tag-box" data-name="pre">
+                        <h3>&lt;pre&gt;</h3>
+                        <p class="description">পূর্ব-ফরম্যাট করা টেক্সট প্রদর্শন করে, যেখানে স্পেস এবং লাইন ব্রেক সংরক্ষিত থাকে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;pre&gt;টেক্সট যেমন আছে, তেমনই দেখাবে।&lt;/pre&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="blockquote quote">
+                        <h3>&lt;blockquote&gt;</h3>
+                        <p class="description">অন্য উৎস থেকে উদ্ধৃত কোনো বড় টেক্সট ব্লক দেখাতে ব্যবহৃত হয়।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;blockquote&gt;এটি একটি উদ্ধৃতি।&lt;/blockquote&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+            
+             <!-- ক্যাটাগরি: লিস্ট -->
+            <section class="tag-category">
+                <h2><i class="fas fa-list"></i> লিস্ট (Lists)</h2>
+                <div class="category-grid">
+                     <div class="tag-box" data-name="ul unordered list">
+                        <h3>&lt;ul&gt;</h3>
+                        <p class="description">একটি আনঅর্ডারড বা ক্রমবিহীন তালিকা (বুলেট পয়েন্টসহ) তৈরি করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;ul&gt;&lt;li&gt;আইটেম ১&lt;/li&gt;&lt;/ul&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="ol ordered list">
+                        <h3>&lt;ol&gt;</h3>
+                        <p class="description">একটি অর্ডারড বা ক্রমযুক্ত তালিকা (সংখ্যাসহ) তৈরি করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;ol&gt;&lt;li&gt;আইটেম ১&lt;/li&gt;&lt;/ol&gt;</code></pre>
+                    </div>
+                     <div class="tag-box" data-name="li list item">
+                        <h3>&lt;li&gt;</h3>
+                        <p class="description">&lt;ul&gt; বা &lt;ol&gt; তালিকার প্রতিটি আইটেমকে সংজ্ঞায়িত করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;li&gt;এটি একটি লিস্ট আইটেম&lt;/li&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ক্যাটাগরি: মিডিয়া -->
+            <section class="tag-category">
+                <h2><i class="fas fa-photo-video"></i> মিডিয়া (Media)</h2>
+                <div class="category-grid">
+                    <div class="tag-box" data-name="img image">
+                        <h3>&lt;img&gt;</h3>
+                        <p class="description">একটি ছবি প্রদর্শন করতে ব্যবহৃত হয়।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;img src="path.jpg" alt="বর্ণনা"&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="audio">
+                        <h3>&lt;audio&gt;</h3>
+                        <p class="description">অডিও ফাইল প্লে করার জন্য ব্যবহৃত হয়।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;audio controls src="sound.mp3"&gt;&lt;/audio&gt;</code></pre>
+                    </div>
+                    <div class="tag-box" data-name="video">
+                        <h3>&lt;video&gt;</h3>
+                        <p class="description">ভিডিও ফাইল প্লে করার জন্য ব্যবহৃত হয়।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;video controls src="movie.mp4"&gt;&lt;/video&gt;</code></pre>
+                    </div>
+                     <div class="tag-box" data-name="figure figcaption">
+                        <h3>&lt;figure&gt; & &lt;figcaption&gt;</h3>
+                        <p class="description">ছবি, ডায়াগ্রাম ইত্যাদির মতো কন্টেন্ট এবং তার ক্যাপশনকে একসাথে গ্রুপ করে।</p>
+                        <strong>উদাহরণ:</strong>
+                        <pre><code>&lt;figure&gt;
+  &lt;img src="pic.jpg"&gt;
+  &lt;figcaption&gt;চিত্র: বর্ণনা&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ক্যাটাগরি: টেবিল -->
+            <section class="tag-category">
+                <h2><i class="fas fa-table"></i> টেবিল (Tables)</h2>
+                <div class="category-grid">
+                    <div class="tag-box" data-name="table"><h3>&lt;table&gt;</h3><p class="description">একটি টেবিল তৈরি করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;table&gt;...&lt;/table&gt;</code></pre></div>
+                    <div class="tag-box" data-name="tr table row"><h3>&lt;tr&gt;</h3><p class="description">টেবিলের একটি সারি (row) তৈরি করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;tr&gt;...&lt;/tr&gt;</code></pre></div>
+                    <div class="tag-box" data-name="td table data cell"><h3>&lt;td&gt;</h3><p class="description">টেবিলের একটি ডেটা সেল তৈরি করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;td&gt;ডেটা&lt;/td&gt;</code></pre></div>
+                    <div class="tag-box" data-name="th table head cell"><h3>&lt;th&gt;</h3><p class="description">টেবিলের একটি হেডার সেল তৈরি করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;th&gt;শিরোনাম&lt;/th&gt;</code></pre></div>
+                    <div class="tag-box" data-name="thead table head"><h3>&lt;thead&gt;</h3><p class="description">টেবিলের হেডার কন্টেন্টকে গ্রুপ করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;thead&gt;...&lt;/thead&gt;</code></pre></div>
+                    <div class="tag-box" data-name="tbody table body"><h3>&lt;tbody&gt;</h3><p class="description">টেবিলের বডি কন্টেন্টকে গ্রুপ করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;tbody&gt;...&lt;/tbody&gt;</code></pre></div>
+                    <div class="tag-box" data-name="tfoot table foot"><h3>&lt;tfoot&gt;</h3><p class="description">টেবিলের ফুটার কন্টেন্টকে গ্রুপ করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;tfoot&gt;...&lt;/tfoot&gt;</code></pre></div>
+                    <div class="tag-box" data-name="caption"><h3>&lt;caption&gt;</h3><p class="description">টেবিলের শিরোনাম বা ক্যাপশন নির্ধারণ করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;caption&gt;টেবিলের নাম&lt;/caption&gt;</code></pre></div>
+                </div>
+            </section>
+
+             <!-- ক্যাটাগরি: ফর্ম -->
+            <section class="tag-category">
+                <h2><i class="fab fa-wpforms"></i> ফর্ম (Forms)</h2>
+                <div class="category-grid">
+                    <div class="tag-box" data-name="form"><h3>&lt;form&gt;</h3><p class="description">ব্যবহারকারীর ইনপুট নেওয়ার জন্য একটি ফর্ম তৈরি করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;form action="/submit"&gt;...&lt;/form&gt;</code></pre></div>
+                    <div class="tag-box" data-name="input"><h3>&lt;input&gt;</h3><p class="description">ইনপুট ফিল্ড তৈরি করে, যেমন text, password, checkbox, radio, submit।</p><strong>উদাহরণ:</strong><pre><code>&lt;input type="text" name="name"&gt;</code></pre></div>
+                    <div class="tag-box" data-name="textarea"><h3>&lt;textarea&gt;</h3><p class="description">একটি মাল্টি-লাইন টেক্সট ইনপুট ফিল্ড তৈরি করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;textarea name="message"&gt;&lt;/textarea&gt;</code></pre></div>
+                    <div class="tag-box" data-name="button"><h3>&lt;button&gt;</h3><p class="description">একটি ক্লিকযোগ্য বাটন তৈরি করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;button type="submit"&gt;জমা দিন&lt;/button&gt;</code></pre></div>
+                    <div class="tag-box" data-name="label"><h3>&lt;label&gt;</h3><p class="description">একটি ফর্ম এলিমেন্টের জন্য একটি লেবেল বা শিরোনাম নির্ধারণ করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;label for="username"&gt;ব্যবহারকারীর নাম:&lt;/label&gt;</code></pre></div>
+                    <div class="tag-box" data-name="select option"><h3>&lt;select&gt; & &lt;option&gt;</h3><p class="description">একটি ড্রপ-ডাউন লিস্ট তৈরি করে, যেখানে &lt;option&gt; দিয়ে আইটেম যুক্ত করা হয়।</p><strong>উদাহরণ:</strong><pre><code>&lt;select&gt;
+  &lt;option value="1"&gt;অপশন ১&lt;/option&gt;
+&lt;/select&gt;</code></pre></div>
+                    <div class="tag-box" data-name="fieldset legend"><h3>&lt;fieldset&gt; & &lt;legend&gt;</h3><p class="description">সম্পর্কিত ফর্ম এলিমেন্টগুলোকে গ্রুপ করে এবং &lt;legend&gt; দিয়ে তার শিরোনাম দেয়।</p><strong>উদাহরণ:</strong><pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;ব্যক্তিগত তথ্য&lt;/legend&gt;
+&lt;/fieldset&gt;</code></pre></div>
+                    <div class="tag-box" data-name="progress"><h3>&lt;progress&gt;</h3><p class="description">কোনো কাজের অগ্রগতি (progress) দেখানোর জন্য একটি বার তৈরি করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;progress value="50" max="100"&gt;&lt;/progress&gt;</code></pre></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- External JavaScript -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('searchInput');
+    const tagBoxes = document.querySelectorAll('.tag-box');
+    const categories = document.querySelectorAll('.tag-category');
+
+    searchInput.addEventListener('input', function () {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+
+        tagBoxes.forEach(box => {
+            // data-name অ্যাট্রিবিউট এবং description থেকে টেক্সট নিয়ে সার্চ করা হবে
+            const tagName = box.dataset.name.toLowerCase();
+            const tagDescription = box.querySelector('.description').textContent.toLowerCase();
+            
+            // যদি সার্চ টার্ম ট্যাগ নামে অথবা বর্ণনায় পাওয়া যায়
+            if (tagName.includes(searchTerm) || tagDescription.includes(searchTerm)) {
+                box.classList.remove('hidden');
+            } else {
+                box.classList.add('hidden');
+            }
+        });
+        
+        // যে সকল ক্যাটাগরির সব ট্যাগ হাইড হয়ে গেছে, সেই ক্যাটাগরিও হাইড করা হবে
+        categories.forEach(category => {
+            const visibleBoxes = category.querySelectorAll('.tag-box:not(.hidden)');
+            if (visibleBoxes.length === 0) {
+                category.classList.add('hidden');
+            } else {
+                category.classList.remove('hidden');
+            }
+        });
+    });
+});
+    </script>
+     
+            <section class="tag-category">
+                <h2><i class="fas fa-pencil-alt"></i> বিশেষ টেক্সট ফরম্যাটিং (Special Text)</h2>
+                <div class="category-grid">
+                    <div class="tag-box" data-name="b bold"><h3>&lt;b&gt;</h3><p class="description">কোনো বিশেষ অর্থ ছাড়াই টেক্সটকে বোল্ড করার জন্য ব্যবহৃত হয়। (Semantic গুরুত্বের জন্য &lt;strong&gt; ব্যবহার করুন)।</p><strong>উদাহরণ:</strong><pre><code>এটি একটি &lt;b&gt;বোল্ড&lt;/b&gt; শব্দ।</code></pre></div>
+                    <div class="tag-box" data-name="i italic"><h3>&lt;i&gt;</h3><p class="description">কোনো বিশেষ অর্থ ছাড়াই টেক্সটকে ইটালিক বা বাঁকা করার জন্য ব্যবহৃত হয়। (Semantic গুরুত্বের জন্য &lt;em&gt; ব্যবহার করুন)।</p><strong>উদাহরণ:</strong><pre><code>এটি একটি &lt;i&gt;ইটালিক&lt;/i&gt; শব্দ।</code></pre></div>
+                    <div class="tag-box" data-name="u underline"><h3>&lt;u&gt;</h3><p class="description">টেক্সটের নিচে আন্ডারলাইন দেওয়ার জন্য ব্যবহৃত হয়। লিঙ্কের সাথে কনফিউশন এড়াতে এটি কম ব্যবহার করা হয়।</p><strong>উদাহরণ:</strong><pre><code>এটি একটি &lt;u&gt;আন্ডারলাইনড&lt;/u&gt; শব্দ।</code></pre></div>
+                    <div class="tag-box" data-name="s strikethrough"><h3>&lt;s&gt;</h3><p class="description">ভুল বা অপ্রাসঙ্গিক টেক্সটের মাঝ বরাবর একটি রেখা টানার জন্য ব্যবহৃত হয়।</p><strong>উদাহরণ:</strong><pre><code>দাম: &lt;s&gt;৳৫০০&lt;/s&gt; ৳৪০০</code></pre></div>
+                    <div class="tag-box" data-name="mark highlight"><h3>&lt;mark&gt;</h3><p class="description">টেক্সটকে হাইলাইট বা মার্ক করার জন্য ব্যবহৃত হয়।</p><strong>উদাহরণ:</strong><pre><code>ফলাফলের মধ্যে &lt;mark&gt;গুরুত্বপূর্ণ&lt;/mark&gt; অংশ।</code></pre></div>
+                    <div class="tag-box" data-name="sub subscript"><h3>&lt;sub&gt;</h3><p class="description">সাবস্ক্রিপ্ট টেক্সট তৈরি করে, যা সাধারণ লাইনের নিচে ছোট আকারে প্রদর্শিত হয় (যেমন: H₂O)।</p><strong>উদাহরণ:</strong><pre><code>H&lt;sub&gt;2&lt;/sub&gt;O</code></pre></div>
+                    <div class="tag-box" data-name="sup superscript"><h3>&lt;sup&gt;</h3><p class="description">সুপারস্ক্রিপ্ট টেক্সট তৈরি করে, যা সাধারণ লাইনের উপরে ছোট আকারে প্রদর্শিত হয় (যেমন: x²)।</p><strong>উদাহরণ:</strong><pre><code>E = mc&lt;sup&gt;2&lt;/sup&gt;</code></pre></div>
+                    <div class="tag-box" data-name="small"><h3>&lt;small&gt;</h3><p class="description">টেক্সটকে ছোট আকারে প্রদর্শন করে (যেমন: কপিরাইট বা সাইড নোট)।</p><strong>উদাহরণ:</strong><pre><code>&lt;small&gt;কপিরাইট © ২০২২&lt;/small&gt;</code></pre></div>
+                    <div class="tag-box" data-name="q quote inline"><h3>&lt;q&gt;</h3><p class="description">ছোট বা ইনলাইন উদ্ধৃতির জন্য ব্যবহৃত হয়। ব্রাউজার স্বয়ংক্রিয়ভাবে কোটেশন মার্ক যুক্ত করে।</p><strong>উদাহরণ:</strong><pre><code>তিনি বলেন, &lt;q&gt;চেষ্টা চালিয়ে যাও।&lt;/q&gt;</code></pre></div>
+                    <div class="tag-box" data-name="cite citation"><h3>&lt;cite&gt;</h3><p class="description">কোনো বই, চলচ্চিত্র বা শিল্পকর্মের শিরোনাম উল্লেখ করতে ব্যবহৃত হয়।</p><strong>উদাহরণ:</strong><pre><code>আমার প্রিয় বই &lt;cite&gt;শেষের কবিতা&lt;/cite&gt;।</code></pre></div>
+                    <div class="tag-box" data-name="dfn definition"><h3>&lt;dfn&gt;</h3><p class="description">একটি শব্দের সংজ্ঞা নির্ধারণ করতে ব্যবহৃত হয়।</p><strong>উদাহরণ:</strong><pre><code>&lt;dfn&gt;HTML&lt;/dfn&gt; হলো ওয়েব পেজ তৈরির ভাষা।</code></pre></div>
+                    <div class="tag-box" data-name="abbr abbreviation"><h3>&lt;abbr&gt;</h3><p class="description">সংক্ষিপ্ত রূপের (abbreviation) পূর্ণরূপ দেখাতে ব্যবহৃত হয়।</p><strong>উদাহরণ:</strong><pre><code>&lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;</code></pre></div>
+                    <div class="tag-box" data-name="time datetime"><h3>&lt;time&gt;</h3><p class="description">তারিখ বা সময়কে মেশিন-রিডেবল ফরম্যাটে প্রকাশ করে।</p><strong>উদাহরণ:</strong><pre><code>মিটিংটি হবে &lt;time datetime="2025-12-25"&gt;বড়দিনে&lt;/time&gt;।</code></pre></div>
+                    <div class="tag-box" data-name="del delete ins insert"><h3>&lt;del&gt; & &lt;ins&gt;</h3><p class="description">ডকুমেন্ট থেকে মুছে ফেলা (&lt;del&gt;) এবং নতুন যুক্ত করা (&lt;ins&gt;) টেক্সট নির্দেশ করে।</p><strong>উদাহরণ:</strong><pre><code>আমার প্রিয় রঙ &lt;del&gt;লাল&lt;/del&gt; &lt;ins&gt;নীল&lt;/ins&gt;।</code></pre></div>
+                    <div class="tag-box" data-name="kbd keyboard"><h3>&lt;kbd&gt;</h3><p class="description">কীবোর্ড ইনপুট বোঝাতে ব্যবহৃত হয়।</p><strong>উদাহরণ:</strong><pre><code>কপি করতে &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; চাপুন।</code></pre></div>
+                </div>
+            </section>
+            
+            <!-- ক্যাটাগরি: ইন্টারেক্টিভ এলিমেন্ট -->
+            <section class="tag-category">
+                <h2><i class="fas fa-mouse-pointer"></i> ইন্টারেক্টিভ এলিমেন্ট (Interactive)</h2>
+                <div class="category-grid">
+                    <div class="tag-box" data-name="details summary accordion"><h3>&lt;details&gt; & &lt;summary&gt;</h3><p class="description">একটি কলাপসিবল বা অ্যাকর্ডিয়ন তৈরি করে। &lt;summary&gt; ট্যাগে দৃশ্যমান শিরোনাম থাকে।</p><strong>উদাহরণ:</strong><pre><code>&lt;details&gt;
+  &lt;summary&gt;আরও জানতে ক্লিক করুন&lt;/summary&gt;
+  &lt;p&gt;এখানে বিস্তারিত তথ্য রয়েছে।&lt;/p&gt;
+&lt;/details&gt;</code></pre></div>
+                    <div class="tag-box" data-name="dialog modal popup"><h3>&lt;dialog&gt;</h3><p class="description">একটি পপ-আপ ডায়ালগ বক্স বা মোডাল তৈরি করে। জাভাস্ক্রিপ্ট দিয়ে নিয়ন্ত্রণ করা যায়।</p><strong>উদাহরণ:</strong><pre><code>&lt;dialog open&gt;এটি একটি ডায়ালগ বক্স।&lt;/dialog&gt;</code></pre></div>
+                </div>
+            </section>
+            
+            <!-- ক্যাটাগরি: এমবেডেড কন্টেন্ট -->
+            <section class="tag-category">
+                <h2><i class="fas fa-code-branch"></i> এমবেডেড কন্টেন্ট (Embedded)</h2>
+                <div class="category-grid">
+                    <div class="tag-box" data-name="iframe"><h3>&lt;iframe&gt;</h3><p class="description">একটি ওয়েবপেজের মধ্যে অন্য একটি ওয়েবপেজ বা ডকুমেন্ট এমবেড করার জন্য ব্যবহৃত হয়।</p><strong>উদাহরণ:</strong><pre><code>&lt;iframe src="https://www.google.com"&gt;&lt;/iframe&gt;</code></pre></div>
+                    <div class="tag-box" data-name="canvas"><h3>&lt;canvas&gt;</h3><p class="description">জাভাস্ক্রিপ্ট ব্যবহার করে গ্রাফিক্স, চার্ট বা অ্যানিমেশন আঁকার জন্য একটি ক্যানভাস বা ক্ষেত্র তৈরি করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</code></pre></div>
+                    <div class="tag-box" data-name="svg scalable vector graphics"><h3>&lt;svg&gt;</h3><p class="description">স্কেলেবল ভেক্টর গ্রাফিক্স (SVG) আঁকার জন্য ব্যবহৃত হয়, যা জুম করলেও ফাটে না।</p><strong>উদাহরণ:</strong><pre><code>&lt;svg width="100" height="100"&gt;
+  &lt;circle cx="50" cy="50" r="40" fill="red" /&gt;
+&lt;/svg&gt;</code></pre></div>
+                    <div class="tag-box" data-name="embed"><h3>&lt;embed&gt;</h3><p class="description">বাহ্যিক কন্টেন্ট (যেমন: PDF, প্লাগইন) এমবেড করার জন্য একটি কন্টেইনার তৈরি করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;embed type="video/webm" src="video.webm"&gt;</code></pre></div>
+                     <div class="tag-box" data-name="object param"><h3>&lt;object&gt; & &lt;param&gt;</h3><p class="description">ছবি, ভিডিও, বা অন্য কোনো মাল্টিমিডিয়া অবজেক্ট এমবেড করে। &lt;param&gt; দিয়ে তার জন্য প্যারামিটার সেট করা হয়।</p><strong>উদাহরণ:</strong><pre><code>&lt;object data="file.swf" type="application/x-shockwave-flash"&gt;
+  &lt;param name="movie" value="file.swf"&gt;
+&lt;/object&gt;</code></pre></div>
+                </div>
+            </section>
+
+            <!-- ক্যাটাগরি: মিডিয়া সম্পর্কিত -->
+            <section class="tag-category">
+                <h2><i class="fas fa-film"></i> মিডিয়া সম্পর্কিত (Media Related)</h2>
+                <div class="category-grid">
+                    <div class="tag-box" data-name="source"><h3>&lt;source&gt;</h3><p class="description">&lt;video&gt; বা &lt;audio&gt; ট্যাগের জন্য একাধিক মিডিয়া সোর্স (যেমন: mp4, ogg) নির্দিষ্ট করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;video&gt;
+  &lt;source src="vid.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre></div>
+                    <div class="tag-box" data-name="track subtitle"><h3>&lt;track&gt;</h3><p class="description">&lt;video&gt; বা &lt;audio&gt; ট্যাগের জন্য টেক্সট ট্র্যাক (যেমন: সাবটাইটেল, ক্যাপশন) যুক্ত করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;video&gt;
+  &lt;track src="sub.vtt" kind="subtitles" srclang="bn"&gt;
+&lt;/video&gt;</code></pre></div>
+                    <div class="tag-box" data-name="picture responsive image"><h3>&lt;picture&gt;</h3><p class="description">বিভিন্ন স্ক্রিন সাইজের জন্য ছবির একাধিক ভার্সন দেখানোর সুযোগ দেয় (Responsive Image)।</p><strong>উদাহরণ:</strong><pre><code>&lt;picture&gt;
+  &lt;source media="(min-width:650px)" srcset="large.jpg"&gt;
+  &lt;img src="small.jpg"&gt;
+&lt;/picture&gt;</code></pre></div>
+                     <div class="tag-box" data-name="map area image map"><h3>&lt;map&gt; & &lt;area&gt;</h3><p class="description">একটি ছবির নির্দিষ্ট অংশে ক্লিকযোগ্য এলাকা (clickable area) তৈরি করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;img src="img.png" usemap="#workmap"&gt;
+&lt;map name="workmap"&gt;
+  &lt;area shape="rect" coords="34,44,270,350" href="#"&gt;
+&lt;/map&gt;</code></pre></div>
+                </div>
+            </section>
+            
+            <!-- ক্যাটাগরি: উন্নত ফর্ম ও টেবিল -->
+            <section class="tag-category">
+                <h2><i class="fas fa-edit"></i> উন্নত ফর্ম ও টেবিল (Advanced Form & Table)</h2>
+                <div class="category-grid">
+                    <div class="tag-box" data-name="datalist"><h3>&lt;datalist&gt;</h3><p class="description">ইনপুট ফিল্ডের জন্য পূর্ব-নির্ধারিত বিকল্পের একটি তালিকা তৈরি করে (অটোকমপ্লিট)।</p><strong>উদাহরণ:</strong><pre><code>&lt;input list="browsers"&gt;
+&lt;datalist id="browsers"&gt;
+  &lt;option value="Chrome"&gt;
+&lt;/datalist&gt;</code></pre></div>
+                    <div class="tag-box" data-name="optgroup option group"><h3>&lt;optgroup&gt;</h3><p class="description">ড্রপ-ডাউন লিস্টের (&lt;select&gt;) অপশনগুলোকে গ্রুপ বা শ্রেণীবদ্ধ করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;select&gt;
+  &lt;optgroup label="Swedish Cars"&gt;
+    &lt;option&gt;Volvo&lt;/option&gt;
+  &lt;/optgroup&gt;
+&lt;/select&gt;</code></pre></div>
+                    <div class="tag-box" data-name="output"><h3>&lt;output&gt;</h3><p class="description">কোনো হিসাব বা স্ক্রিপ্টের ফলাফল প্রদর্শনের জন্য ব্যবহৃত হয়।</p><strong>উদাহরণ:</strong><pre><code>&lt;form oninput="x.value=a.value"&gt;
+  &lt;input type="range" id="a"&gt;
+  &lt;output name="x" for="a"&gt;&lt;/output&gt;
+&lt;/form&gt;</code></pre></div>
+                    <div class="tag-box" data-name="meter gauge"><h3>&lt;meter&gt;</h3><p class="description">একটি নির্দিষ্ট সীমার মধ্যে স্কেলার পরিমাপ বা গেজ (gauge) প্রদর্শন করে (যেমন: ডিস্ক ব্যবহার)।</p><strong>উদাহরণ:</strong><pre><code>&lt;meter value="2" min="0" max="10"&gt;2 out of 10&lt;/meter&gt;</code></pre></div>
+                     <div class="tag-box" data-name="colgroup col column"><h3>&lt;colgroup&gt; & &lt;col&gt;</h3><p class="description">টেবিলের এক বা একাধিক কলামকে স্টাইল করার জন্য গ্রুপ করে।</p><strong>উদাহরণ:</strong><pre><code>&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col span="2" style="background-color:red"&gt;
+  &lt;/colgroup&gt;
+&lt;/table&gt;</code></pre></div>
+                </div>
+            </section>
+
+            <!-- ক্যাটাগরি: স্ক্রিপ্টিং ও অন্যান্য -->
+            <section class="tag-category">
+                <h2><i class="fas fa-cogs"></i> স্ক্রিপ্টিং ও অন্যান্য (Scripting & Others)</h2>
+                <div class="category-grid">
+                    <div class="tag-box" data-name="script javascript"><h3>&lt;script&gt;</h3><p class="description">জাভাস্ক্রিপ্ট কোড যুক্ত করার জন্য ব্যবহৃত হয়। এটি &lt;head&gt; বা &lt;body&gt; উভয় স্থানেই ব্যবহার করা যায়।</p><strong>উদাহরণ:</strong><pre><code>&lt;script src="app.js"&gt;&lt;/script&gt;</code></pre></div>
+                    <div class="tag-box" data-name="noscript"><h3>&lt;noscript&gt;</h3><p class="description">যদি ব্রাউজারে স্ক্রিপ্ট নিষ্ক্রিয় (disabled) থাকে, তবে এই ট্যাগের ভেতরের কন্টেন্ট প্রদর্শিত হবে।</p><strong>উদাহরণ:</strong><pre><code>&lt;noscript&gt;জাভাস্ক্রিপ্ট প্রয়োজন।&lt;/noscript&gt;</code></pre></div>
+                    <div class="tag-box" data-name="template"><h3>&lt;template&gt;</h3><p class="description">একটি লুকানো কন্টেন্টের খসড়া, যা পেজ লোডের সময় রেন্ডার হয় না কিন্তু পরে জাভাস্ক্রিপ্ট দিয়ে ব্যবহার করা যায়।</p><strong>উদাহরণ:</strong><pre><code>&lt;template&gt;
+  &lt;p&gt;Hidden content&lt;/p&gt;
+&lt;/template&gt;</code></pre></div>
+                </div>
+            </section>
+</body>
+</html>
